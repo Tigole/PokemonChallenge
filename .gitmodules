@@ -1,0 +1,3 @@
+[submodule "Submodules/Lys-Framework"]
+	path = Submodules/Lys-Framework
+	url = https://github.com/Tigole/Lys-Framework.git
