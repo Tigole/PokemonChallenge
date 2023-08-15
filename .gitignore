@@ -32,3 +32,6 @@
 *.app
 /build
 /.xmake
+/xmake.lua
+/CodeBlocks/bin
+/CodeBlocks/obj
