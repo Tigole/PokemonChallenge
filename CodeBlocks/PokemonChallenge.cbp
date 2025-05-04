@@ -31,8 +31,32 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add option="-isystem ../Submodules/Lys-Framework/include" />
+			<Add option="-isystem ../Submodules/Lys-Framework/submodules/TinyXML_Boosted/Include" />
+			<Add option="-isystem ../Submodules/Lys-Framework/submodules/glm" />
+			<Add directory="../src" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Linker>
+			<Add library="Lys" />
+			<Add library="Lys-log" />
+			<Add library="Lys-core" />
+			<Add library="sfml-window" />
+			<Add library="sfml-graphics" />
+			<Add library="sfml-system" />
+			<Add directory="../Submodules/Lys-Framework/build/Release" />
+			<Add directory="../Submodules/Lys-Framework/submodules/TinyXML_Boosted/Build/Release" />
+		</Linker>
+		<Unit filename="../src/Gameplay/PokemonDefinition.cpp" />
+		<Unit filename="../src/Gameplay/PokemonDefinition.hpp" />
+		<Unit filename="../src/Gameplay/PokemonMove.hpp" />
+		<Unit filename="../src/Gameplay/PokemonTypes.cpp" />
+		<Unit filename="../src/Gameplay/PokemonTypes.hpp" />
+		<Unit filename="../src/PokemonChallengeApp.cpp" />
+		<Unit filename="../src/PokemonChallengeApp.hpp" />
+		<Unit filename="../src/States/GameState/GameLayer.cpp" />
+		<Unit filename="../src/States/GameState/GameLayer.hpp" />
+		<Unit filename="../src/States/StateGame.hpp" />
+		<Unit filename="../src/main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

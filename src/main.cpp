@@ -1,27 +1,11 @@
 #include <iostream>
-#include "Lys/Lys.hpp"
+#include "PokemonChallengeApp.hpp"
 
 using namespace std;
 
 
-class PokemonChallengeApplication : public lys::Application
-{
-public:
-    PokemonChallengeApplication(int argc, char* argv[]);
+#error "https://tcrf.net/Development:Pok%C3%A9mon_Red_and_Blue/Unused_Maps"
 
-private:
-
-    std::size_t mt_Initialize(void) override;
-};
-
-PokemonChallengeApplication::PokemonChallengeApplication(int argc, char* argv[]) :
-    lys::Application("Pokemon Challenge", lys::CommandLineArguments(argc, argv))
-{}
-
-std::size_t PokemonChallengeApplication::mt_Initialize(void) 
-{
-    return -1;
-}
 
 int main(int argc, char** argv)
 {
